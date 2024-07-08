@@ -11,27 +11,27 @@
     nixpkgs.url = github:NixOS/nixpkgs/nixos-unstable;
     flake-utils.url = "github:numtide/flake-utils";
     cadquery-src = {
-      url = "github:CadQuery/cadquery/245b6f39e597d324cbe8652b385a2130cdce545b";
+      url = "github:CadQuery/cadquery/9ee703da3498ea375fdc6d8054bee1cbcd325535";
       flake = false;
     };
     cq-editor-src = {
-      url = "github:CadQuery/CQ-editor/4ef178af06d24a53fee87d576f8cada14c0111a3";
+      url = "github:CadQuery/CQ-editor/c9f9cbd000496e0045a56763db883211a6f9a5e5";
       flake = false;
     };
     ocp-src = {
-      url = "github:cadquery/ocp/4b98a5dc79fa900f7429975708f6a8c2e41cecd1";
+      url = "github:cadquery/ocp/74b0dc035d81a4d421673875024016cb5c138398";
       flake = false;
     };
     ocp-stubs-src = {
-      url = "github:cadquery/ocp-stubs";
+      url = "github:cadquery/ocp-stubs/e838ff400d5ee2f4a0579d2a713b19311855288f";
       flake = false;
     };
     pywrap-src = {
-      url = "github:CadQuery/pywrap";
+      url = "github:CadQuery/pywrap/977faad67b813ba08b799af1f43d8ade881e5bc1";
       flake = false;
     };
     pybind11-stubgen-src = {
-      url = "github:CadQuery/pybind11-stubgen";
+      url = "github:CadQuery/pybind11-stubgen/e838ff400d5ee2f4a0579d2a713b19311855288f";
       flake = false;
     };
   };
