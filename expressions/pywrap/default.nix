@@ -51,7 +51,7 @@ buildPythonPackage rec {
 
   patches = [
     ./less-warnings.patch
-    ./new-pandas-read-csv.patch
+    # ./new-pandas-read-csv.patch
     # ./003_log_dropped_methods.patch
   ];
 
