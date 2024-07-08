@@ -29,6 +29,9 @@ in
   pname = "opencascade-occt";
   version = "7.7.2";
   commit = "V${builtins.replaceStrings ["."] ["_"] version}";
+  permittedInsecurePackages = [
+      "freeimage-unstable-2021-11-01"
+    ];
 
   src = fetchurl {
     name = "occt-${commit}.tar.gz";
