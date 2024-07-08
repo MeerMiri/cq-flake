@@ -16,7 +16,6 @@
   , vtk
   , xorg
   , freetype
-  , freeimage
   , fontconfig
   , tbb_2021_11
   , rapidjson
@@ -29,9 +28,6 @@ in
   pname = "opencascade-occt";
   version = "7.7.2";
   commit = "V${builtins.replaceStrings ["."] ["_"] version}";
-  permittedInsecurePackages = [
-      "freeimage-unstable-2021-11-01"
-    ];
 
   src = fetchurl {
     name = "occt-${commit}.tar.gz";
@@ -51,7 +47,6 @@ in
     vtk
     xorg.libXt
     freetype
-    freeimage
     fontconfig
     tbb_2021_11
     rapidjson
@@ -74,7 +69,7 @@ in
     "-D 3RDPARTY_VTK_LIBRARY_DIR:FILEPATH=${vtk}/lib"
     "-D 3RDPARTY_VTK_INCLUDE_DIR:FILEPATH=${vtk}/include/vtk"
     "-D VTK_RENDERING_BACKEND:STRING=\"OpenGL2\""
-    "-D USE_FREEIMAGE:BOOL=ON"
+    "-D USE_FREEIMAGE:BOOL=OFF"
     "-D USE_RAPIDJSON:BOOL=ON"
   ];
 
